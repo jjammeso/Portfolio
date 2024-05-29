@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonam Jamtsho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="name-menu">
+            <img class="menu" src="./assets/icons8-menu.svg" />
+            <h2><span>S</span>onam <span>J</span>amtsho </h2>
+        </div>
+        <ul>
+            <li><a href="#landing-container">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+    </div>
+    
+    <div class="container">
+        <div id="landing-container">
+            <div class="image-container">
+                <img src="./assets/profile-crop.png" />
+            </div>
+            <div class="intro-text">
+                <p>Hi,</p>
+                <p>I am a <span>Web Developer</span></p>
+                <a href="#contact">
+                    <div class="button">Contact</div>
+                </a>
+                <br>
+
+                <div class="icons">
+                    <a href="https://github.com/jjammeso?tab=repositories" target="_blank">
+                        <img class="icon" src="./assets/icons8-github.svg" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/sonam-jamtsho-944288228/" target="_blank">
+                        <img class="icon" src="./assets/icons8-linkedin.svg" />
+                    </a>
+                    <a href="https://learner.mycreds.ca/sharelink/33465ef0-f760-4992-93ef-70804baaf16a/837ec55b-ba1b-4794-8934-38f60733dd35" target="_blank">
+                        <img class="icon" src="./assets/icons8-education-96.png" />
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about-me">
+
+            <div class="about-me-left">
+                <h2>About me</h2>
+                <p>
+                    I am a passionate full-stack web developer with proficiency in 
+                    both frontend and backend development, as well as databases. What sets me apart is
+                     my unwavering commitment to continuous learning
+                      and personal growth—traits I consider crucial in the fast-evolving tech landscape.
+                       I am constantly seeking to broaden my expertise because of my genuine enthusiasm
+                        for web development.<br>
+                    Through my journey, I have enriched my skills by working on various personal projects. 
+                    Now, I am eager to transition into a team environment where I can collaborate with and
+                     learn from seasoned developers. I believe that the insights and practical experience
+                      gained from such interactions are unparalleled and essential for my professional 
+                      development.<br/>
+                    Outside of coding, My hobby is working on DIY projects, which enhance my problem-solving 
+                    abilities and creativity.Building projects from scratch not only satisfies me, 
+                    but it also improves my ability to turn ideas into real outcomes, a skill that 
+                    is essential in software development.
+                       </p>
+            </div> 
+            <!-- <div class="about-me-right">
+                <img src="./assets/259815.jpg">
+            </div> -->
+
+        </div>
+
+        <div id="skills">
+            <h2>Skills</h2>
+            <div class="skill-container">
+                <div class="skill-type">
+                    <h3>Frontend Stack</h3>
+                    <div class="stack">
+                        <img src="./assets/skills-logo/html-1.svg" />
+                        <img src="./assets/skills-logo/css-3.svg"/>
+                        <img src="./assets/skills-logo/javascript-1.svg"/>
+                        <img src="./assets/skills-logo/react-2.svg" />
+                        <img src="./assets/skills-logo/next-js.svg"/>
+                        <img src="./assets/skills-logo/bootstrap-5.svg"/>
+                    </div>
+                </div>
+                <div class="skill-type">
+                    <h3>Backend Stack</h3>
+                    <div class="stack">
+                        <img src="./assets/skills-logo/nodejs-3.svg" />
+                        <img src="./assets/skills-logo/express-109.svg"/>
+                        <img src="./assets/skills-logo/mongodb-icon-2.svg"/>
+                        <img src="./assets/skills-logo/postgresql.svg"/>
+                        
+                    </div>
+                </div>
+                <div class="skill-type">
+                    <h3>Additional Skills</h3>
+                    <div class="stack">
+                        <img src="./assets/skills-logo/c-1.svg" />
+                        <img src="./assets/skills-logo/python-5.svg"/>
+                        <img src="./assets/skills-logo/c.svg"/>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="projects">
+            <h2>Projects</h2>
+
+        </div>
+
+        <div id="contact">
+            <div class="contact-card">
+                <div class="contact-left">
+                    <p>
+                        <span>GET IN <br>TOUCH</span>
+                    </p>
+                </div>
+                <form class="form" id="contactForm" mailto="sjjamtsho@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="message">Message</label>
+                    <textarea class="message" name="message" id="message" placeholder="Type your message here"></textarea>
+                    <button type="button" onclick="sendMail()">Send Email</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="footer">
+            <ul>
+                <li><a href="#landing-container">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <a href="https://github.com/jjammeso?tab=repositories" target="_blank">
+                    <img class="icon" src="./assets/icons8-github.svg" />
+                </a>
+                <a href="https://www.linkedin.com/in/sonam-jamtsho-944288228/" target="_blank">
+                    <img class="icon" src="./assets/icons8-linkedin.svg" />
+                </a>
+                <a href="https://learner.mycreds.ca/sharelink/33465ef0-f760-4992-93ef-70804baaf16a/837ec55b-ba1b-4794-8934-38f60733dd35" target="_blank">
+                    <img class="icon" src="./assets/icons8-education-96.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./data/projects.js"></script>
+
+</body>
+
+</html>

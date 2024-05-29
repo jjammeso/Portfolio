@@ -1,0 +1,94 @@
+/*about-me CSS*/
+#about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#about-me h2{
+    width: fit-content;
+    border-radius: 2px;
+
+}
+
+#about-me .about-me-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 40px;
+    font-size: 16px;
+    line-height: 25px;
+    width: 100%;
+    background-color:#F5F5F5;
+}
+
+#about-me .about-me-right {
+    width: 40%;
+}
+
+#about-me .about-me-right img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+@media (max-width:1200px ){
+
+    #about-me {
+        align-items: center;
+        padding: 50px;
+    }
+
+    #about-me .about-me-left {
+        padding: 0 30px;
+        font-size: 17px;
+        line-height: 25px;
+        width: 45%;
+        background-color:#F5F5F5;
+    
+    }
+}
+
+@media (max-width:950px ){
+
+    #about-me {
+        flex-direction: column-reverse;
+    }
+
+    #about-me .about-me-left {
+        padding: 0 40px;
+        font-size: 15px;
+        line-height: 25px;
+        width: 100%;
+        background-color:#F5F5F5;
+    }
+
+    #about-me h2{
+        width: fit-content;
+        border-radius: 2px;
+        font-size: 20px;
+    }
+
+    #about-me .about-me-right {
+        display: none;
+    }
+}
+
+@media (max-width:420px ){
+
+    #about-me{
+        padding: 0;
+    }
+
+    #about-me .about-me-left {
+        padding: 0 20px;
+        font-size: 13px;
+        line-height: 16px;
+        width: 100%;
+        background-color:#F5F5F5;
+    }
+}

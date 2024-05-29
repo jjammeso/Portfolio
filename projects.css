@@ -1,0 +1,110 @@
+/*Projects CSS*/
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects .card{
+    display: flex;
+    padding: 0;
+    
+}
+
+#projects .projects-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid rgba(0, 0, 0, 0.523);
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin:15px;
+    overflow: hidden;
+    background-color:#F5F5F5;
+    width: 80%;
+    padding: 0;
+}
+
+.projects-card .projects-card-left{
+    width: 45%;
+    height: auto;
+    padding-left: 20px;
+    border-radius: 15px;
+    display: flex;
+}
+
+.projects-card-left img{
+    width:95%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.projects-card .card .projects-card-right{
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-card h3{
+    padding-left: 20px;
+}
+
+.tools{
+    background-color: rgb(151, 149, 149);
+    padding: 4px;
+    color: white;
+}
+
+@media (max-width: 900px){
+    .projects-card .card .projects-card-right p{
+        margin: 5px;
+    }
+
+    .projects-card .card {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px){
+
+    #projects .card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projects{
+        padding: 0;
+        margin: 0;
+    }
+
+    .projects-card .projects-card-left{
+        width: 70%;
+        padding-left: 0px;
+    }
+
+    .projects-card .card .projects-card-right{
+        width: 100%;
+        padding-left: 45px;
+        padding-right: 40px;
+        line-height: 17px;
+    }
+
+    .projects-card .card .projects-card-right p{
+        margin: 1px;
+    }
+
+}
+
+@media (max-width: 400px){
+    #projects h2{
+        font-size: 25px;
+        margin-top: 25px;
+        margin-bottom: 0px;
+
+    }
+
+}
