@@ -53,9 +53,9 @@
 }
 
 .tools{
-    background-color: rgb(151, 149, 149);
+    /* background-color: rgb(151, 149, 149); */
     padding: 4px;
-    color: white;
+    /* color: white; */
 }
 
 @media (max-width: 900px){
