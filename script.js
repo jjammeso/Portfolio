@@ -56,17 +56,23 @@ function renderProjects() {
                 <p><strong>Developers tools:</strong> ${project.tools.map((item) => `<span class='tools'>${item}</span>`
         ).join('  ')}</p>
                 <p><strong>Description: </strong>${project.description}</p>
-                <p class='links'><strong>Link:</strong> ${project.link.map((link)=>(
-                    `<a href="${link}">${link}</a><br/>`
-    )).join(' ')}</p>
+                <p class='links'><strong>Link:</strong> ${project.link.map((link) => (
+            `<a href="${link}">${link}</a><br/>`
+        )).join(' ')}</p>
                 <p><strong>github:</strong> <a href='${project.github}'>${project.github}</a></p>
+                <p class='note'><strong>*Note: </strong>${project.note}</p>
             </div>
     </div>
         `;
-
         projectsContainer.appendChild(card)
     });
+    const note = document.querySelectorAll('.note')
+    console.log(note)
+    note.forEach((n)=>{
+        if(n.outerText=="*Note:null") n.style.display = 'none';
+    })
 }
+
 
 menu.addEventListener('click', () => {
     if (element.style.display == 'none') {
