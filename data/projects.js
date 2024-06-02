@@ -6,7 +6,7 @@ window.projects = [
         link: ["https://artexplorer-sonamjamtsho.vercel.app/"],
         image: "./assets/art-explorer.png",
         github: 'https://github.com/jjammeso/Metropolitan-Musuem',
-        note:'Since API for user-management is hosted on FREE instance of Render, any operation involving user may be delayed at first try.'
+        note:'Since API for user-management is hosted on FREE instance of Render, user operation may be delayed at first try.'
     },
     {
         name: "Furniture Store",
@@ -15,7 +15,7 @@ window.projects = [
         link: ["https://furniture-store-frontend.vercel.app/", "https://furniture-store-admin.vercel.app/"],
         image: "./assets/Furniture-Store.png",
         github: 'https://github.com/jjammeso/Furniture-Store-Frontend',
-        note:'Since API is hosted on FREE instance of Render, the product load time is delayed by 50s or more during the first try and might need to refresh couple of times.'
+        note:'Use username=admin and password=admin for admin site. Since API is hosted on FREE instance of Render, the product load time is delayed by 50s or more during the first try and might need to refresh couple of times.'
     },
 
 ];
