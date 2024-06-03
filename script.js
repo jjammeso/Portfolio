@@ -57,9 +57,9 @@ function renderProjects() {
         ).join('  ')}</p>
                 <p><strong>Description: </strong>${project.description}</p>
                 <p class='links'><strong>Link:</strong> ${project.link.map((link) => (
-            `<a href="${link}">${link}</a><br/>`
+            `<a target="_blank" href="${link}">${link}</a><br/>`
         )).join(' ')}</p>
-                <p><strong>github:</strong> <a href='${project.github}'>${project.github}</a></p>
+                <p><strong>github:</strong> <a target="_blank" href='${project.github}'>${project.github}</a></p>
                 <p class='note'><strong>*Note: </strong>${project.note}</p>
             </div>
     </div>
